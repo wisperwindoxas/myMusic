@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$bodyColor:#252737;
+$headerColor:#1f2130;
+$menuColor:#222436;
+$button:#ff1f74;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+    background: $bodyColor;
+    position: relative;
+}
+
+.header{
+  background: $headerColor;
+}
+
+
+.navigation{
+  background: $menuColor;
+}
+
+.main{
+  width: calc(100% - 120px);
+  margin-top: 100px;
+  margin-left: 120px;
+}
+
+.player{
+  width: calc(100% - 120px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 120px;
+  .rhap_container{
+    background: $headerColor;
+  }
+
+}
+
+
+.rhap_main-controls-button{
+  color:#fff;
+  
+}
+
+.rhap_time{
+  color:#fff;
+}
+.rhap_progress-indicator{
+  background:$button;
+}
+
+.rhap_progress-bar{
+  background: #fff;
+}
+
+.rhap_header{
+  color: #fff;
+  text-align: center;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 10px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.album_info{
+  background-color: #00000059;
+  
+}
+
+
+
+
+.music_lists::-webkit-scrollbar {
+  width: 5px;
+
+}
+ 
+.music_lists::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(54, 54, 54, 0);
+ 
+}
+ 
+.music_lists::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 16, 200);
+  outline: 1px solid transparent;
+  border-radius: 56px;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(54, 54, 54, 0);
+ 
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 16, 200);
+  outline: 1px solid transparent;
+  border-radius: 56px;
+}

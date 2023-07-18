@@ -1,5 +1,9 @@
-import './globals.css'
+import './globals.scss'
 import { Inter } from 'next/font/google'
+import Header from './header/Header'
+import Navigator from './navigation/Navigator'
+import Player from './components/musicPlayer/Player'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,8 +18,21 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html>
+      <body className={inter.className}>
+
+        <Header />
+
+        <div className='border-none'>
+          <Navigator />
+          <main className='main'>{children}
+           
+          </main>
+          <div className='player'>
+              <Player />
+            </div>
+        </div>
+      </body>
     </html>
   )
 }
